@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Database
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+
+# OS
+.DS_Store
+ehthumbs.db
+Desktop.ini
+
+# Tauri
+src-tauri/WixTools/
+
+# Секреты и личные данные
+*key*
+*keys*
+*.key
+*.pem
+*.p12
+secrets/
+**/secrets/
+*.secret
+
+# Планы и внутренние документы (не для репозитория)
+plans/
+**/plans/
+*.plan
+plan-*
