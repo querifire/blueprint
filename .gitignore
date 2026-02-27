@@ -51,6 +51,7 @@ src-tauri/WixTools/
 
 *key*
 *keys*
+!src-tauri/src/hotkeys.rs
 *.key
 *.pem
 *.p12
