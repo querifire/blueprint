@@ -1,37 +1,58 @@
-# Blueprint
-
 <div align="center">
+  <img src="app-icon.svg" width="80" alt="Blueprint Logo" />
 
-![Blueprint](app-icon.svg)
+  <h1>Blueprint</h1>
 
-**Десктопное приложение для управления клиентами, услугами и заметками**
+  <p><strong>Desktop app for managing clients, services, and notes</strong></p>
 
-[![Build](https://github.com/querifire/blueprint/actions/workflows/build.yml/badge.svg)](https://github.com/querifire/blueprint/actions/workflows/build.yml)
+  <p>
+    Cross-platform Tauri + React app: chat, client database, service catalog, notes, and settings in one window. Command palette for quick navigation.
+  </p>
 
+  <p>
+    <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-555?style=flat-square" alt="Platform" />
+    <img src="https://img.shields.io/badge/built%20with-Tauri%202-24C8D8?style=flat-square&logo=tauri" alt="Tauri" />
+    <img src="https://img.shields.io/badge/frontend-React%2018-61DAFB?style=flat-square&logo=react" alt="React" />
+    <img src="https://img.shields.io/badge/backend-Rust-CE4226?style=flat-square&logo=rust" alt="Rust" />
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License" />
+  </p>
 </div>
 
 ---
 
-## О проекте
+## Features
 
-Blueprint — кроссплатформенное приложение на [Tauri](https://tauri.app) и [React](https://react.dev). Чат, клиенты, услуги, заметки и настройки в одном окне без лишних зависимостей.
+- **Chat** — messaging and history
+- **Clients** — client database
+- **Services** — service catalog
+- **Notes** — quick notes
+- **Settings** — light/dark theme, app preferences
+- **Command palette** — `Ctrl+K` / `Cmd+K` for quick navigation
 
-## Возможности
+---
 
-- **Чат** — общение и история
-- **Клиенты** — база клиентов
-- **Услуги** — каталог услуг
-- **Заметки** — быстрые заметки
-- **Настройки** — тема (светлая/тёмная), параметры приложения
-- **Командная палитра** — `Ctrl+K` / `Cmd+K` для быстрого перехода
+## Tech Stack
 
-## Требования
+| Layer | Technology |
+|---|---|
+| Desktop shell | [Tauri 2](https://tauri.app/) |
+| Frontend | React 18, TypeScript, Vite |
+| UI | MUI, Framer Motion |
+| State | Zustand |
+| Routing | React Router DOM 6 |
+| Backend | Rust (Tauri plugins: store, notification, global-shortcut) |
+
+---
+
+## Getting Started
+
+### Prerequisites
 
 - [Node.js](https://nodejs.org/) 20+
-- [Rust](https://www.rust-lang.org/) (stable)
-- Для сборки под Linux: зависимости из [документации Tauri](https://tauri.app/v1/guides/getting-started/prerequisites#linux)
+- [Rust](https://www.rust-lang.org/tools/install) (stable)
+- [Tauri CLI prerequisites](https://tauri.app/start/prerequisites/) for your OS
 
-## Установка и запуск
+### Development
 
 ```bash
 git clone https://github.com/querifire/blueprint.git
@@ -40,26 +61,16 @@ npm install
 npm run tauri dev
 ```
 
-Сборка релиза:
+### Build
 
 ```bash
 npm run tauri build
 ```
 
-## Сборка из исходников (кратко)
+Installers are output to `src-tauri/target/release/bundle/` (Windows: `.msi`/`.exe`, macOS: `.dmg`, Linux: `.deb`/`.AppImage`).
 
-| Платформа | Действия |
-|-----------|----------|
-| Windows   | `npm run tauri build` → установщик в `src-tauri/target/release/bundle/` |
-| macOS     | То же → `.dmg` в `src-tauri/target/release/bundle/dmg/` |
-| Linux     | Установить [зависимости](https://tauri.app/v1/guides/getting-started/prerequisites#linux), затем `npm run tauri build` |
+---
 
-## Стек
+## License
 
-- **Frontend:** React 18, TypeScript, Vite, MUI, Framer Motion, Zustand, React Router
-- **Backend:** Tauri 2 (Rust)
-- **Плагины Tauri:** store, notification, global-shortcut
-
-## Лицензия
-
-[MIT](LICENSE) © [querifire](https://github.com/querifire).
+[MIT](LICENSE)

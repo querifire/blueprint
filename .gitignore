@@ -41,18 +41,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Testing
 coverage/
 
-# OS
 .DS_Store
 ehthumbs.db
 Desktop.ini
 
-# Tauri
 src-tauri/WixTools/
 
-# Секреты и личные данные
 *key*
 *keys*
 *.key
@@ -62,8 +58,10 @@ secrets/
 **/secrets/
 *.secret
 
-# Планы и внутренние документы (не для репозитория)
 plans/
 **/plans/
 *.plan
 plan-*
+
+*.md
+!README.md
