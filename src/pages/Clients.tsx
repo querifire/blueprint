@@ -310,13 +310,12 @@ export default function Clients() {
               <>
                 <Typography
                   sx={{
-                    fontSize: "0.6875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 600,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
                     color: isDark ? "#6e6e80" : "#acacbe",
                     mb: 1.5,
-                    fontSize: "0.75rem",
                   }}
                 >
                   Платежи — последние 12 месяцев
@@ -385,13 +384,12 @@ export default function Clients() {
               <>
                 <Typography
                   sx={{
-                    fontSize: "0.6875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 600,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
                     color: isDark ? "#6e6e80" : "#acacbe",
                     mb: 1.5,
-                    fontSize: "0.75rem",
                   }}
                 >
                   Статус оплаты
